@@ -1,10 +1,5 @@
-
-console.log("Contacto");
 var valueAsesoria = " ";
 var optionValue = " ";
-window.onload = function(){
-}
-
 
 
 function changeValue(value) {
@@ -41,57 +36,4 @@ function sendTo() {
         optionValue = "No ingreso dato";
       }
   window.location.href = "mailto:info@thermahome.mx?Subject=De:%20" + name + ":%20necesito%20" + valueAsesoria + "&body=" + mensaje + "%0A%0ACorreo:%20" + email + "%0AEspacio%20de%20instalacion:%20" + optionValue + "%0ACiudad:%20" + city;
-}
-
-function menuMobile(c){
-  switch (c) {
-  case 0:
-  innerMenu.style.opacity = "1";
-  innerMenu.style.left = "100vw";
-  break;
-  case 1:
-  innerMenu.style.opacity = "1";
-  innerMenu.style.left = "0";
-  break;
-  }
-}
-
-function hideMenu(c){
-  switch (c) {
-    case 0:
-      desktop.style.opacity = "1";
-    break;
-    case 1:
-      desktop.style.opacity = "0";
-    break;
-  }
-}
-
-
-function showPhoneDesktMob(){
-  telmenumobile.style.opacity = "1";
-}
-function showPhoneDesktop(c){
-  switch (c) {
-    case 0:
-      popTelefono.style.display = "none";
-      break;
-    case 1:
-      popTelefono.style.display = "block";
-      break;
-  }
-}
-
-
-function menuMobile(c){
-  switch (c) {
-  case 0:
-  innerMenu.style.opacity = "1";
-  innerMenu.style.left = "100vw";
-  break;
-  case 1:
-  innerMenu.style.opacity = "1";
-  innerMenu.style.left = "0";
-  break;
-  }
 }
