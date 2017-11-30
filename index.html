@@ -1,0 +1,494 @@
+<!--
+Theme: Thermahome
+v3
+19 de Sep 2017
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="cache-control" content="no-cache"/>
+	<meta http-equiv="pragma" content="no-cache"/>
+	<meta name="google" content="notranslate"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=1.0000, user-scalable=yes">
+  <title>ThermaHome | Calefacción...Invisible</title>
+  <link rel="canonical" href="www.thermahome.mx" />
+  <meta name="description" content="Calefacción de última tecnología para interiores y exteriores: calor para el hogar, pisos calientes, muros y placas calefactoras en México. +1 52 5575 860 896"/>
+	<meta name="author" content="fluo.com.mx">
+	<meta property="og:title" content="Therma Home | Calefacción...Invisible">
+	<meta property="og:site_name" content="Therma Home | Calefacción...Invisible">
+	<meta property="og:url" content="www.thermahome.mx">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/media.jpg">
+	<meta property="og:description" content="Calefacción de última tecnología para interiores y exteriores: calor para el hogar, pisos calientes, muros y placas calefactoras en México. +1 52 5575 860 896">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@fluomx">
+	<meta name="twitter:title" content="Therma Home | Calefacción...Invisible">
+	<meta name="twitter:description" content="Calefacción de última tecnología para interiores y exteriores: calor para el hogar, pisos calientes, muros y placas calefactoras en México. +1 52 5575 860 896">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+	<link rel="manifest" href="img/fav/manifest.json">
+	<link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/master.css" media="all">
+</head>
+<body>
+  <p id="size"></p>
+  <div id="telPopW">
+    <div>
+      <a role="button" onclick="popPhone('close')"><img src="img/icons/close-white.svg" alt="Cerrar teléfono" width="22"></a>
+      <p>
+        +1 52 5575 860 896<br><br>
+        Horarios de atención: <br>
+        Lunes - Viernes <br>
+        9:00am a 19:00 <br><br>
+        Dakota 347 Col. Nápoles 03810, CDMX.
+      </p>
+    </div>
+  </div>
+  <div id="loading">
+		<svg viewBox="0 0 35.9 44.6">
+			<path class="lineaLoading morado" d="M34,18.4c-0.4,0-0.9-0.2-1.3-0.5L18,5L3.2,17.9c-0.8,0.7-2,0.6-2.7-0.2c-0.7-0.8-0.6-2,0.2-2.7l16-14c0.7-0.6,1.8-0.6,2.5,0l16,14c0.8,0.7,0.9,1.9,0.2,2.7C35.1,18.1,34.6,18.4,34,18.4z"/>
+			<path class="lineaLoading morado" d="M34,26.4H1.9c-1,0-1.7-0.8-1.7-1.7S1,23,1.9,23H34c1,0,1.7,0.8,1.7,1.7S35,26.4,34,26.4z"/>
+			<path class="lineaLoading morado" d="M34,34.5H1.9c-1,0-1.7-0.8-1.7-1.7c0-1,0.8-1.7,1.7-1.7H34c1,0,1.7,0.8,1.7,1.7C35.8,33.7,35,34.5,34,34.5z"/>
+			<path class="lineaLoading morado" d="M34,42.7H1.9c-1,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7H34c1,0,1.7,0.8,1.7,1.7S35,42.7,34,42.7z"/>
+		</svg>
+		<p id="percentage">1%</p>
+	</div>
+  <nav>
+    <div class="outer">
+      <a class="logotipo" href="index.html">
+        <img src="img/logotipo-thermahome.svg" alt="Logotipo Thermahome" width="180">
+      </a>
+      <a class="mobile" role="button" onclick="menuMobile('menuMain')" onmouseover="overMenuMain('over')" onmouseout="overMenuMain('out')">
+        <div id="iconMenuWrap">
+          <span class="lineMenuIcon"></span>
+          <span class="lineMenuIcon transform"></span>
+          <span class="lineMenuIcon"></span>
+        </div>
+      </a>
+      <ul class="desktop">
+        <li><a href="quienes.html">Quiénes Somos</a></li>
+        <li><a class="subMenuDesktopBtn" role="button" onclick="menuDesk('showProd')">Productos</a></li>
+        <li><a href="termostatos.html">Termostatos</a></li>
+        <li><a class="subMenuDesktopBtn" role="button" onclick="menuDesk('showCasos')">Casos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li>
+          <a class="telefonoDom">
+            <img src="img/icons/phone-out.svg" alt="Teléfono thermahome +1 52 5575 860 896" width="30" onmouseover="overIcons('over', 'phone-', this)" onmouseout="overIcons('out', 'phone-', this)">
+          </a>
+      </li>
+      </ul>
+    </div>
+    <!-- innerMobile -->
+    <!-- mainInner -->
+    <div class="mainMobile innerMobile hideInner" style="background:#fff;">
+        <div class="interfaz">
+          <a role="button" onclick="menuMobile('menuOut')" onmouseover="overMenuClose('over', this)" onmouseout="overMenuClose('out', this)">
+            <span class="rotA rotccw"></span>
+            <span class="rotB rotcw"></span>
+          </a>
+        </div>
+        <ul class="subMain">
+          <li><a href="quienes.html">Quiénes Somos</a></li>
+          <li><a class="btbProductos" role="button" onclick="menuMobile('menuSubProd')">Productos<span>></span></a></li>
+          <li><a href="termostatos.html">Termostatos</a></li>
+          <li><a role="button" onclick="menuMobile('menuSubCasos')">Casos<span>></span></a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="redes">
+          <a class="telefonoDom">
+            <img src="img/icons/phone-out.svg" alt="Icono regresar" width="40" onmouseover="overIcons('over', 'phone-', this)" onmouseout="overIcons('out', 'phone-', this)">
+          </a>
+          <a href="mailto:info@thermahome.mx">
+            <img src="img/icons/mail-out.svg" alt="Icono cerrar" width="40" onmouseover="overIcons('over', 'mail-', this)" onmouseout="overIcons('out', 'mail-', this)">
+          </a>
+        </div>
+      </div>
+      <!-- productos -->
+      <div class="subProductosMobile innerMobile hideInner" style="background:#3e2e3b;">
+        <div class="interfaz">
+          <img src="img/icons/back.svg" alt="Icono regresar" width="40" onclick="menuMobile('menuSubProdOut')">
+          <a role="button" onclick="menuMobile('menuOut')" onmouseover="overMenuClose('over', this)" onmouseout="overMenuClose('out', this)">
+            <span class="rotA rotccw" style="background:#fff;"></span>
+            <span class="rotB rotcw" style="background:#fff;"></span>
+          </a>
+        </div>
+        <ul class="productosSub">
+          <li class="therma"><a href="thermawall.html">ThermaWall</a></li>
+          <li class="therma"><a href="thermafloor.html">ThermaFloor</a></li>
+          <li class="therma"><a href="thermadeck.html">ThermaDeck</a></li>
+          <li class="ntw"><a href="deck.html">Deck</a></li>
+          <li class="ntw"><a href="murosyfachadas.html">Muros y Fachadas</a></li>
+          <li class="ntw"><a href="pergolados.html">Pergolados</a></li>
+        </ul>
+      </div>
+      <!-- casos -->
+      <div class="subCasosMobile innerMobile hideInner" style="background:#3e2e3b;">
+        <div class="interfaz">
+          <img src="img/icons/back.svg" alt="Icono regresar" width="40" onclick="menuMobile('menuSubCasosOut')">
+          <a role="button" onclick="menuMobile('menuOut')" onmouseover="overMenuClose('over', this)" onmouseout="overMenuClose('out', this)">
+            <span class="rotA rotccw" style="background:#fff;"></span>
+            <span class="rotB rotcw" style="background:#fff;"></span>
+          </a>
+        </div>
+        <ul class="casosSub">
+          <li class="casos"><a href="casos.html">ThermaWall</a></li>
+          <li class="casos"><a href="casos.html">ThermaFloor</a></li>
+          <li class="mas"><a href="casos.html">Más</a></li>
+        </ul>
+      </div>
+      <ul class="subProductosDesk innerDesktop hideSubDesk" style="background: #fff;">
+        <li class="therma"><a href="thermawall.html">ThermaWall</a></li>
+        <li class="therma"><a href="thermafloor.html">ThermaFloor</a></li>
+        <li class="therma"><a href="thermadeck.html">ThermaDeck</a></li>
+        <li class="ntw"><a href="deck.html">Deck</a></li>
+        <li class="ntw"><a href="murosyfachadas.html">Muros y Fachadas</a></li>
+        <li class="ntw"><a href="pergolados.html">Pergolados</a></li>
+      </ul>
+      <ul class="subCasosDesk innerDesktop hideSubDesk" style="background: #992231;">
+        <li><a href="casos.html">ThermaWall</a></li>
+        <li><a href="casos.html">ThermaFloor</a></li>
+        <li><a href="casos.html">Más</a></li>
+      </ul>
+  </nav>
+  <div id="main">
+    <div id="coverVideo">
+      <iframe src="https://player.vimeo.com/video/238791596?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="424" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen onload="vimeoIsPlaying()"></iframe>
+      <h2>Calefacción...<span>Invisible.</span></h2>
+      <a role="button">
+        Ver Video
+      </a>
+    </div>
+    <div id="productosMobile">
+      <span></span>
+      <h3>Ver Productos</h3>
+      <span style="height:3px;"></span>
+      <ul>
+        <li><a href="termostatos.html" class="therma">TERMOSTATO</a></li>
+        <li><a href="thermawall.html" class="therma">THERMAWALL</a></li>
+        <li><a href="thermafloor.html" class="therma">THERMAFLOOR</a></li>
+        <li><a href="thermadeck.html" class="therma">THERMADECK</a></li>
+        <li><a href="pergolados.html" class="ntw">PERGOLADOS</a></li>
+        <li><a href="murosyfachadas.html" class="ntw">MUROS Y FACHADAS</a></li>
+        <li><a href="deck.html" class="ntw">DECK</a></li>
+      </ul>
+      <span class="separacion" style="height:3px; width:100%;"></span>
+    </div>
+    <div class="pleca" style="display:none"></div>
+    <div id="nosotros">
+        <div class="info">
+          <h3 style="line-height:40px;">Nuestra Tecnología</h3>
+          <span class="separacion" style="height:3px; width:75%; margin-left:10%;"></span>
+          <p>
+					Mientras que la calefacción común lanza corrientes
+					de aire alrededor de los objetos (paredes, muebles),
+					<b>ThermaHome</b> entrega el calor mediante <b>energía radiante</b>.
+					Al tocar los objetos éstos la absorben y se vuelve energía
+					de calefacción. Al aumentar su temperatura, los objetos
+					transmiten el calor al aire mediante la convección. Gracias
+					a esta tecnología excepcional <b>ThermaHome</b> ofrece una emisividad
+					elevada y una sensación de calor cómoda y natural, por medio de
+					paneles radiantes que posibilitan una distribución vertical de
+					calor más equilibrada dentro de la habitación.
+				</p>
+        </div>
+        <div class="beneficiosPoints">
+          <ul>
+    				<li>
+    					<img src="img/icons/caracteristicas1.svg" alt="Icono característica" width="25">
+    					<p>No contamina el ambiente</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas2.svg" alt="Icono característica" width="25">
+    					<p>Es material duradero</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas3.svg" alt="Icono característica" width="25">
+    					<p>No produce residuos</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas4.svg" alt="Icono característica" width="25">
+    					<p>No se degrada</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas5.svg" alt="Icono característica" width="25">
+    					<p>Cero radiación</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas6.svg" alt="Icono característica" width="25">
+    					<p>Sin mantenimiento</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas7.svg" alt="Icono característica" width="25">
+    					<p>Sin gastos extras</p>
+    				</li>
+			    </ul>
+        </div>
+    </div>
+    <div class="pleca"></div>
+    <div id="renderSlider">
+      <!-- PUNTOS HOVER -->
+      <div id="point1" class="area">
+        <a href="thermawall.html">
+          <img class="backring" src="img/icons/point_back.svg" width="38">
+          <img class="ring" src="img/icons/point_stroke.svg" width="38">
+          <img class="ringNum" src="img/icons/pointtermo.svg" width="38">
+        </a>
+      </div>
+      <div id="point2" class="area">
+        <a href="thermafloor.html">
+          <img class="backring" src="img/icons/point_back.svg" width="38">
+          <img class="ring" src="img/icons/point_stroke.svg" width="38">
+          <img class="ringNum" src="img/icons/point1.svg" width="38">
+        </a>
+      </div>
+      <div id="point3" class="area">
+        <a href="thermadeck.html">
+          <img class="backring" src="img/icons/point_back.svg" width="38">
+          <img class="ring" src="img/icons/point_stroke.svg" width="38">
+          <img class="ringNum" src="img/icons/point2.svg" width="38">
+        </a>
+      </div>
+      <div id="point4" class="area">
+        <a href="termostatos.html">
+          <img class="backring" src="img/icons/point_back.svg" width="38">
+          <img class="ring" src="img/icons/point_stroke.svg" width="38">
+          <img class="ringNum" src="img/icons/point3.svg" width="38">
+        </a>
+      </div>
+      <div id="point5" class="area">
+        <a href="deck.html">
+          <img src="img/icons/homeNTW-out.svg" width="38">
+          <img class="overNtw" src="img/icons/homeNTW-over.svg" width="38">
+          <img class="ringNum" src="img/icons/point4.svg" width="38">
+        </a>
+      </div>
+      <div id="point6" class="area">
+        <a href="murosyfachadas.html">
+          <img src="img/icons/homeNTW-out.svg" width="38">
+          <img class="overNtw" src="img/icons/homeNTW-over.svg" width="38">
+          <img class="ringNum" src="img/icons/point5.svg" width="38">
+        </a>
+      </div>
+      <div id="point7" class="area">
+        <a href="pergolados.html">
+          <img src="img/icons/homeNTW-out.svg" width="38">
+          <img class="overNtw" src="img/icons/homeNTW-over.svg" width="38">
+          <img class="ringNum" src="img/icons/point6.svg" width="38">
+        </a>
+      </div>
+        <div id="iphoneMap">
+          <p>10</p>
+          <img src="img/iphone_negro.png">
+        </div>
+      <img id="mapImg" src="img/render/render-home-1.jpg" usemap="#mapArea1"  border="0" width="1920" height="1440" orgWidth="1920" orgHeight="1440" alt="" onload="mapIsReady()"/>
+      <img id="mapImgDos" src="img/render/render-home-2.jpg">
+      <map name="mapArea1">
+        <area  id="point1" class="points" alt="ThermaFloor" title="ThermaWall" shape="rect" coords="576,400,626,450"/>
+        <area  id="point2" class="points" alt="ThermaWall" title="ThermaFloor" shape="rect" coords="415,1168,465,1218"/>
+        <area  id="point3" class="points" alt="ThermaDeck" title="ThermaDeck" shape="rect" coords="1015,472,1065,522"/>
+        <area  id="point4" class="points" alt="Termostato" title="Termostato" shape="rect" coords="151,536,261,643"/>
+        <area  id="point5" class="points" alt="Pergolados" title="Deck" shape="rect" coords="1438,749,1488,799"/>
+        <area  id="point6" class="points" alt="Fachada" title="Fachada" shape="rect" coords="1064,567,1114,617"/>
+        <area  id="point7" class="points" alt="Deck" title="Pergolados" shape="rect" coords="1360,357,1410,407"/>
+      </map>
+      <!-- slider -->
+      <div id="sliderRange" onmouseover="overSliderRange('over')" onmouseout="overSliderRange('out')">
+        <p>Ajusta la temperatura a tu gusto</p>
+        <div>
+          <div id="slider-range"></div>
+        </div>
+      </div>
+    </div>
+    <div id="beneficios">
+		<div class="tituloB">
+			<h3>Saludable</h3>
+			<span></span>
+			<svg width="30" height="30">
+				<path class="svgborder" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M21.2,3c-3.2,0-6.1,2.4-6.7,5.6c0,0,0.1,0,0,0c-0.1,0,0,0,0,0C13.9,5.4,11.1,3,7.8,3c-3.7,0-6.7,3.2-6.7,7 s4.6,7.8,6.7,9.9c1.9,1.8,7.1,7.5,7.1,7.5s4.6-5.8,6.2-7.5c2.1-2.1,6.7-6,6.7-9.9S24.9,3,21.2,3z" style="stroke-dasharray: 84.93, 84.93; stroke-dashoffset: 0;"></path>
+			</svg>
+		</div>
+		<div class="textoB">
+			<p>
+				Limita el movimiento de bacterias y
+				elementos en el ambiente. Disminuye el
+				riesgo de enfermedades – asma, alergias
+				e infecciones. Produce relajación en los
+				mecanismos de regulación del cuerpo humano.
+			</p>
+      <span class="margenMobileBeneficios"></span>
+		</div>
+		<div class="tituloB">
+			<h3>Ecológica</h3>
+			<span></span>
+			<svg width="30" height="30">
+				<path class="svgborder" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M20.5,20.5C22,25.5,9,32.6,4.6,21.4C1.9,14.2,1.8,1.9,1.8,1.9s12.4-0.1,19.3,2.7 C32.8,9.3,25.4,21.8,20.5,20.5" style="stroke-dasharray: 84.3015, 84.3015; stroke-dashoffset: 0;"></path>
+				<line class="svgborder" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27.2" y1="27.2" x2="8" y2="8.1" style="opacity: 1;"></line>
+				<line class="svgborder" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.7" y1="17.7" x2="19.2" y2="12.3" style="opacity: 1;"></line>
+				<line class="svgborder" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="13.2" y1="13.2" x2="13.7" y2="9" style="opacity: 1;"></line>
+				<line class="svgborder" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.7" y1="17.7" x2="12.2" y2="19.3" style="opacity: 1;"></line>
+				<line class="svgborder" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="13.2" y1="13.2" x2="8.9" y2="13.8" style="opacity: 1;"></line>
+			</svg>
+		</div>
+		<div class="textoB">
+			<p>
+				Bajo consumo energético: Permite un ahorro de
+				energía de 18–24%. Posibilita una distribución
+				de calor más equilibrada en la habitación. No
+				hay uso de hidrocarburos.
+			</p>
+      <span class="margenMobileBeneficios"></span>
+		</div>
+		<div class="tituloB">
+			<h3>Práctica</h3>
+			<span></span>
+			<svg width="30" height="30">
+				<path class="svgborder" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M27.8,19.1c-2.3,7-9.8,10.9-16.9,8.6S0,17.9,2.3,10.9S12.2,0,19.2,2.3" style="stroke-dasharray: 63.1035, 63.1035; stroke-dashoffset: 0;"></path>
+				<line class="svgborder" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="10" y1="14" x2="14.1" y2="18.9" style="opacity: 1;"></line>
+				<line class="svgborder" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="25.4" y1="7.6" x2="14.1" y2="18.9" style="opacity: 1;"></line>
+			</svg>
+		</div>
+		<div class="textoB">
+			<p>
+				Es de fácil instalación y requiere cero mantenimiento.
+				Sin fugas. Sin calderas. Sin tuberías. Sin radiadores.
+				Compatible con cualquier sistema de automatización.
+			</p>
+      <span class="margenMobileBeneficios"></span>
+		</div>
+	</div>
+  </div>
+  <footer>
+    <ul>
+      <!-- icono mobile -->
+      <li class="mobile">
+        <a data-scroll href="#main">
+          <img class="alignCenter" id="iconGoBack" src="img/icons/footer.svg" alt="" width="40" title="Subir">
+        </a>
+      </li>
+      <li class="alignLeft">
+        <p>
+          <a  href="preguntas.html" style="text-decoration: underline;"><b>Preguntas Frecuentes</b></a>
+        </p>
+        <p>
+          <a  href="#"><b>5575860896</b></a>
+          <br>
+          <a  href="#"><b>info@thermahome.mx</b></a>
+        </p>
+      </li>
+      <!-- icono desktop -->
+      <li class="desktop">
+        <a data-scroll href="#main">
+          <img class="alignCenter" id="iconGoBack" src="img/icons/footer.svg" alt="" width="40" title="Subir">
+        </a>
+      </li>
+      <li class="alignRight">
+        <p>
+          <a role="button">Derechos Reservados <br> Thermahome© 2017</a>
+
+          <br>
+          <br>
+            <a href="www.fluo.com.mx">Coded by <b>Fluo</b></a>
+        </p>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/bowser.min.js" charset="utf-8"></script>
+  <script src="js/imageMapResizer.min.js" charset="utf-8"></script>
+  <script src="js/smooth-scroll.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    function _(el){return document.querySelector(el); }
+    function __(el){return document.querySelectorAll(el); }
+    var svgborder = __('.svgborder'),
+        nuestratecnologia = _('#nosotros'),
+        area = __('.area'),
+        points = __('.points'),
+        mapImg = _('#mapImg');
+    var svgOpacity = [2,3,4,5,6,8,9];
+
+    window.onload = function(){
+      function initLoading(){
+        var countPercentage = setInterval(function(){
+            countLoading++;
+            percentage.innerHTML = countLoading + "%";
+            if(countLoading >= 100) clearLoading();
+        },400);
+        function clearLoading(){
+          clearInterval(countPercentage);
+        }
+        setInterval(function(){ logoLoading(); },2600);
+      }
+
+      function logoLoading(){
+        var lineaLoading = __('.lineaLoading');
+        setTimeout(function(){ lineaLoading[3].classList.remove('morado'); lineaLoading[3].classList.add('amarillo'); },500);
+        setTimeout(function(){ lineaLoading[2].classList.remove('morado'); lineaLoading[2].classList.add('naranja'); },700);
+        setTimeout(function(){ lineaLoading[1].classList.remove('morado'); lineaLoading[1].classList.add('rojo'); },900);
+        setTimeout(function(){ lineaLoading[0].classList.remove('morado'); lineaLoading[0].classList.add('vino'); },1200);
+        setTimeout(function(){ lineaLoading[0].classList.remove('vino'); lineaLoading[0].classList.add('morado'); },2000);
+        setTimeout(function(){ lineaLoading[1].classList.remove('rojo'); lineaLoading[1].classList.add('morado'); },2200);
+        setTimeout(function(){ lineaLoading[2].classList.remove('naranja'); lineaLoading[2].classList.add('morado'); },2400);
+        setTimeout(function(){ lineaLoading[3].classList.remove('amarillo'); lineaLoading[3].classList.add('morado'); },2600);
+      }
+      initLoading();
+      logoLoading();
+      var checkMobile = false;
+      if(bowser.mobile || bowser.tablet || /SymbianOS/.test(window.navigator.userAgent)) checkMobile = true;
+      videoSetHeight();
+      imageMapResize();
+      smoothScroll.init();
+      if(checkMobile){
+        setButtonPhone('mobile');
+      } else{
+        getCoords();
+        setButtonPhone('desktop');
+      }
+    }
+    window.onresize = function(){
+      var size = document.getElementById('size').innerHTML = "Width: " + window.innerWidth + "px Height: " + window.innerHeight + "px";
+      videoSetHeight();
+      getCoords();
+      imageMapResize();
+    }
+    window.onscroll = function () {
+      svgAniRect = nuestratecnologia.getBoundingClientRect();
+      svgAniEnter = window.innerHeight - svgAniRect.bottom;
+      svgAniCenter = (svgAniRect.height/2) - svgAniEnter;
+      if(svgAniCenter < 0){
+        playAniSvg();
+      } else {
+        setAniSvg();
+      }
+    }
+  </script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  var amountOp = 0,
+      iphoneMapInner = _('#iphoneMap>p'),
+      mapImgDos = _('#mapImgDos');
+	  $(function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 10,
+      max: 24,
+      values: [ 10, 10 ],
+      animate:true,
+      step:1,
+      slide: function( event, ui ) {
+        iphoneMapInner.innerHTML = ui.values[1];
+        var opImgCalor = (ui.values[1]/24)-0.5;
+        mapImgDos.style.opacity = opImgCalor;
+      }
+    });
+  });
+</script>
+</body>
+</html>

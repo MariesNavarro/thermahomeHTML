@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Slider Fluo</title>
+    <link rel="stylesheet" href="slider.css">
+  </head>
+  <body>
+  <section id="wrap">
+    <ul id="slider">
+      <li class="slide" style="img/"></li>
+      <li class="slide" style="img/"></li>
+      <li class="slide" style="img/"></li>
+      <a role="button" class="button-prev" style="left:0;" onclick="slider('prev')"> <img src="arrow-out.svg" class="rotIcon" width="35" onmouseover="overIcon('arrow', this, '-over')" onmouseout="overIcon('arrow', this, '-out')"></a>
+      <a role="button" class="button-next" style="right:0;" onclick="slider('next')"> <img src="arrow-out.svg" width="35" onmouseover="overIcon('arrow', this, '-over')" onmouseout="overIcon('arrow', this, '-out')"> </a>
+    </ul>
+  </section>
+  <script src="slider.js" charset="utf-8"></script>
+  </body>
+</html>

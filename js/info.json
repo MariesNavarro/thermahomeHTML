@@ -1,0 +1,67 @@
+{
+  "termoTit" : [
+    { "tit" : "Duowei DW-H902 (Incluido en instalaciones)" },
+    { "tit" : "Wifi: Saswell T13FHL-7 (Costo adicional)" },
+    { "tit" : "Wifi: Elsonic RT-002 WIFI (Costo adicional)" }
+  ],
+  "b1" : [
+    {  "b" : "Control remoto vía Control Manual." },
+    {  "b" : "Display de color azul con luz de fondo." },
+    {  "b" : "Control de operación vía Touch Screen." },
+    {  "b" : "Función de programación de períodos por día." },
+    {  "b" : "Control semanario." },
+    {  "b" : "Menú en inglés." }
+  ],
+  "b2" : [
+    {  "b" : "Control remoto vía Smartphone (<b>WIFI</b>)." },
+    {  "b" : "Display de color TFT con luz de fondo." },
+    {  "b" : "Control manual giratorio de 360 grado." },
+    {  "b" : "Función de control de energía." },
+    {  "b" : "Control de protección para congelamiento." },
+    {  "b" : "Menú en inglés." }
+  ],
+  "b3" : [
+    {  "b" : "Control remoto vía Smartphone (<b>WIFI</b>)." },
+    {  "b" : "Display de color TFT con luz de fondo." },
+    {  "b" : "Control manual giratorio de 360 grado." },
+    {  "b" : "Función de control de energía." },
+    {  "b" : "Control de protección para niveles de temperatura." },
+    {  "b" : "Menú en inglés." }
+  ],
+  "pop1" : [
+    {  "p" : "Control remoto vía Smartphone (<b>WIFI</b>)." },
+    {  "p" : "Voltaje de operación: <b>110 vac ± 10% 50/60 hz</b>" },
+    {  "p" : "Corriente de carga: <b>16a / 25a</b>" },
+    {  "p" : "Rango de temperatura: <b>5 ºC / 35 ºC</b>" },
+    {  "p" : "Precisión: <b>±1 ºC</b>" },
+    {  "p" : "Color: <b>Blanco</b>" },
+    {  "p" : "Dimensiones: <b>86 mm * 86 mm * 14 mm</b>" },
+    {  "p" : " " },
+    {  "p" : " " },
+    {  "p" : " " }
+  ],
+  "pop2" : [
+    {  "p" : "Voltaje de Operación: <b>100-240 vac 50/60 HZ</b>" },
+    {  "p" : "Carga máxima: <b>250 vac 16 amps</b>" },
+    {  "p" : "Rango Temperatura Cuarto: <b>5ºC (41ºF) / 35ºC (95ºF)</b>" },
+    {  "p" : "Rango Temperatura Piso: <b>5ºC (41ºF) / 45ºC (113ºF)</b>" },
+    {  "p" : "Temperatura Operación Ambiente: <b>0ºC (32ºF) / 50ºC (122ºF)</b>" },
+    {  "p" : "Precisión: <b>±1f ± 0.5C</b>" },
+    {  "p" : "Clase: <b>21</b>" },
+    {  "p" : "Peso: <b>30 grs</b>" },
+    {  "p" : "Color: <b>Blanco</b>" },
+    {  "p" : "Dimensiones: <b>86 mm * 86 mm * 18 mm</b>" }
+  ],
+  "pop3" : [
+    {  "p" : "Temperatura ambiente en display: <b>5 - 35ºC</b>" },
+    {  "p" : "Temperatura de ajuste: <b>5 - 35 ºC</b>" },
+    {  "p" : "Precisión: <b>0.1 ºC</b>" },
+    {  "p" : "Precisión temperatura deseada: <b>0.5 ºC</b>" },
+    {  "p" : "Potencia de funcionamiento: <b>100/220 vac 50/60 hz</b>" },
+    {  "p" : "Pantalla: <b>TFT color 2.6'</b>" },
+    {  "p" : "Color: <b>Blanco</b>" },
+    {  "p" : "Dimensiones: <b>90 mm * 90 mm * 21.8 mm</b>" },
+    {  "p" : "Dimensión con base de apoyo: <b>100 mm * 100 mm * 59.8 mm</b>" },
+    {  "p" : " " }
+  ]
+}
