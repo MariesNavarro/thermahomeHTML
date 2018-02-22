@@ -1,3 +1,5 @@
+function _(el){return document.querySelector(el); }
+function __(el){return document.querySelectorAll(el); }
 var checkBowser = false;
 if(bowser.mobile || bowser.tablet || /SymbianOS/.test(window.navigator.userAgent)) checkBowser = true;
 
@@ -273,21 +275,6 @@ function getCoords (){
    }
 }
 
-function vimeoIsPlaying() {
-  console.log("Vimeo is ready");
-  var w = _('#loading');
-  setTimeout(function(){
-    w.style.opacity = "0";
-    setTimeout(function(){
-      w.style.display = "none";
-    },600);
-  },2000);
-}
-
-function mapIsReady(){
-  console.log("Mapa listo");
-}
-
 function overSliderRange(c){
   var iphoneMap = _('#iphoneMap');
   switch (c) {
@@ -299,9 +286,6 @@ function overSliderRange(c){
     break;
   }
 }
-
-
-
 
 function overIconNtw(e,u,c){
   e.setAttribute('src', 'img/icons/' + u + c + '.svg');
@@ -387,80 +371,36 @@ var app, wrapPixi = _('#coverVideo');
 /* PRODUCTO PIXI */
 //Thermafloor
 function loadRenderThermafloor(){
-  app = new PIXI.Application(800, 400,{antialias: false, transparent: true, resolution: 1});
-  wrapPixi.appendChild(app.view);
-  PIXI.loader
-  .add('img/pixi/thermafloor-1.json')
-  .add('img/pixi/thermafloor-2.json')
-  .add('img/pixi/thermafloor-3.json')
-  .on('progress', function (loader, loadedResource) {
-      var num = (Math.round(loader.progress)/2);
-      if(num>=48){
-        var w = _('#loading');
-        setTimeout(function(){
-          w.style.opacity = "0";
-          setTimeout(function(){
-            w.style.display = "none";
-          },600);
-        },3000);
-      }
-  })
-  .load(function(){
-    	onLoadedDesktopFloor(0,111);
-      renderProductoMob();
-	});
+  loadingProducts();
+  wrapPixi.style.width = "600px";
+  wrapPixi.style.height = "400px";
+  wrapPixi.style.backgroundImage = "url('img/producto-thermafloor.png')";
 };
 //Thermadeck
 function loadRenderThermadeck(){
-  app = new PIXI.Application(800, 400,{antialias: false, transparent: true, resolution: 1});
-  wrapPixi.appendChild(app.view);
-  PIXI.loader
-  .add('img/pixi/thermadeck-1.json')
-  .add('img/pixi/thermadeck-2.json')
-  .add('img/pixi/thermadeck-3.json')
-  .on('progress', function (loader, loadedResource) {
-      var num = (Math.round(loader.progress)/2);
-      if(num>=48){
-        var w = _('#loading');
-        setTimeout(function(){
-          w.style.opacity = "0";
-          setTimeout(function(){
-            w.style.display = "none";
-          },600);
-        },3000);
-      }
-  })
-  .load(function(){
-    	onLoadedDesktopDeck(0,111);
-      renderProductoMob();
-	});
+  loadingProducts();
+  wrapPixi.style.width = "600px";
+  wrapPixi.style.height = "400px";
+  wrapPixi.style.backgroundImage = "url('img/producto-thermadeck.png')";
 };
 
 //Thermawall
 function loadRenderThermawall(){
-  app = new PIXI.Application(800, 400,{antialias: false, transparent: true, resolution: 1});
-  wrapPixi.appendChild(app.view);
-  PIXI.loader
-  .add('img/pixi/thermawall-1.json')
-  .add('img/pixi/thermawall-2.json')
-  .add('img/pixi/thermawall-3.json')
-  .on('progress', function (loader, loadedResource) {
-      var num = (Math.round(loader.progress)/2);
-      if(num>=48){
-        var w = _('#loading');
-        setTimeout(function(){
-          w.style.opacity = "0";
-          setTimeout(function(){
-            w.style.display = "none";
-          },600);
-        },3000);
-      }
-  })
-  .load(function(){
-    	onLoadedDesktopWall(0,111);
-      renderProductoMob();
-	});
+  loadingProducts();
+  wrapPixi.style.width = "600px";
+  wrapPixi.style.height = "400px";
+  wrapPixi.style.backgroundImage = "url('img/producto-thermawall.png')";
 };
+
+function loadingProducts(){
+  var w = _('#loading');
+  setTimeout(function(){
+    w.style.opacity = "0";
+    setTimeout(function(){
+      w.style.display = "none";
+    },600);
+  },800);
+}
 
 function onLoadedDesktopDeck(fs,fe){
 	var j = fs, frames = [];

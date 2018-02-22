@@ -1,7 +1,7 @@
 <!--
 Theme: Thermahome
-v3
-19 de Sep 2017
+v4
+15 de Feb 2018
 -->
 <!DOCTYPE html>
 <html lang="es">
@@ -34,7 +34,7 @@ v3
 	<link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#ffffff">
   <link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/iu.css" media="all">
 	<link rel="stylesheet" type="text/css" href="css/master.css" media="all">
 </head>
 <body>
@@ -158,81 +158,12 @@ v3
       </ul>
   </nav>
   <div id="main">
-    <div id="coverVideo">
-      <iframe src="https://player.vimeo.com/video/238791596?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="424" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen onload="vimeoIsPlaying()"></iframe>
+    <div id="mapaMobile">
+      <img src="img/render/render-home-1.jpg" alt="Thermahome calefacción invisible">
       <h2>Calefacción...<span>Invisible.</span></h2>
-      <a role="button">
-        Ver Video
-      </a>
     </div>
-    <div id="productosMobile">
-      <span></span>
-      <h3>Ver Productos</h3>
-      <span style="height:3px;"></span>
-      <ul>
-        <li><a href="termostatos.html" class="therma">TERMOSTATO</a></li>
-        <li><a href="thermawall.html" class="therma">THERMAWALL</a></li>
-        <li><a href="thermafloor.html" class="therma">THERMAFLOOR</a></li>
-        <li><a href="thermadeck.html" class="therma">THERMADECK</a></li>
-        <li><a href="pergolados.html" class="ntw">PERGOLADOS</a></li>
-        <li><a href="murosyfachadas.html" class="ntw">MUROS Y FACHADAS</a></li>
-        <li><a href="deck.html" class="ntw">DECK</a></li>
-      </ul>
-      <span class="separacion" style="height:3px; width:100%;"></span>
-    </div>
-    <div class="pleca" style="display:none"></div>
-    <div id="nosotros">
-        <div class="info">
-          <h3 style="line-height:40px;">Nuestra Tecnología</h3>
-          <span class="separacion" style="height:3px; width:75%; margin-left:10%;"></span>
-          <p>
-					Mientras que la calefacción común lanza corrientes
-					de aire alrededor de los objetos (paredes, muebles),
-					<b>ThermaHome</b> entrega el calor mediante <b>energía radiante</b>.
-					Al tocar los objetos éstos la absorben y se vuelve energía
-					de calefacción. Al aumentar su temperatura, los objetos
-					transmiten el calor al aire mediante la convección. Gracias
-					a esta tecnología excepcional <b>ThermaHome</b> ofrece una emisividad
-					elevada y una sensación de calor cómoda y natural, por medio de
-					paneles radiantes que posibilitan una distribución vertical de
-					calor más equilibrada dentro de la habitación.
-				</p>
-        </div>
-        <div class="beneficiosPoints">
-          <ul>
-    				<li>
-    					<img src="img/icons/caracteristicas1.svg" alt="Icono característica" width="25">
-    					<p>No contamina el ambiente</p>
-    				</li>
-    				<li>
-    					<img src="img/icons/caracteristicas2.svg" alt="Icono característica" width="25">
-    					<p>Es material duradero</p>
-    				</li>
-    				<li>
-    					<img src="img/icons/caracteristicas3.svg" alt="Icono característica" width="25">
-    					<p>No produce residuos</p>
-    				</li>
-    				<li>
-    					<img src="img/icons/caracteristicas4.svg" alt="Icono característica" width="25">
-    					<p>No se degrada</p>
-    				</li>
-    				<li>
-    					<img src="img/icons/caracteristicas5.svg" alt="Icono característica" width="25">
-    					<p>Cero radiación</p>
-    				</li>
-    				<li>
-    					<img src="img/icons/caracteristicas6.svg" alt="Icono característica" width="25">
-    					<p>Sin mantenimiento</p>
-    				</li>
-    				<li>
-    					<img src="img/icons/caracteristicas7.svg" alt="Icono característica" width="25">
-    					<p>Sin gastos extras</p>
-    				</li>
-			    </ul>
-        </div>
-    </div>
-    <div class="pleca"></div>
     <div id="renderSlider">
+      <h2>Calefacción...<span>Invisible.</span></h2>
       <!-- PUNTOS HOVER -->
       <div id="point1" class="area">
         <a href="thermawall.html">
@@ -287,7 +218,7 @@ v3
           <p>10</p>
           <img src="img/iphone_negro.png">
         </div>
-      <img id="mapImg" src="img/render/render-home-1.jpg" usemap="#mapArea1"  border="0" width="1920" height="1440" orgWidth="1920" orgHeight="1440" alt="" onload="mapIsReady()"/>
+      <img id="mapImg" src="img/render/render-home-1.jpg" usemap="#mapArea1"  border="0" width="1920" height="1440" orgWidth="1920" orgHeight="1440"/>
       <img id="mapImgDos" src="img/render/render-home-2.jpg">
       <map name="mapArea1">
         <area  id="point1" class="points" alt="ThermaFloor" title="ThermaWall" shape="rect" coords="576,400,626,450"/>
@@ -305,6 +236,80 @@ v3
           <div id="slider-range"></div>
         </div>
       </div>
+    </div>
+    <div id="productosMobile">
+      <span></span>
+      <h3>Ver Productos</h3>
+      <span style="height:3px;"></span>
+      <ul>
+        <li><a href="termostatos.html" class="therma">TERMOSTATO</a></li>
+        <li><a href="thermawall.html" class="therma">THERMAWALL</a></li>
+        <li><a href="thermafloor.html" class="therma">THERMAFLOOR</a></li>
+        <li><a href="thermadeck.html" class="therma">THERMADECK</a></li>
+        <li><a href="pergolados.html" class="ntw">PERGOLADOS</a></li>
+        <li><a href="murosyfachadas.html" class="ntw">MUROS Y FACHADAS</a></li>
+        <li><a href="deck.html" class="ntw">DECK</a></li>
+      </ul>
+      <span class="separacion" style="height:3px; width:100%;"></span>
+    </div>
+    <div class="pleca" style="opacity:0"></div>
+    <div id="nosotros">
+        <div class="info">
+          <h3 style="line-height:40px;">Nuestra Tecnología</h3>
+          <span class="separacion" style="height:3px; width:75%; margin-left:10%;"></span>
+          <p>
+					Mientras que la calefacción común lanza corrientes
+					de aire alrededor de los objetos (paredes, muebles),
+					<b>ThermaHome</b> entrega el calor mediante <b>energía radiante</b>.
+					Al tocar los objetos éstos la absorben y se vuelve energía
+					de calefacción. Al aumentar su temperatura, los objetos
+					transmiten el calor al aire mediante la convección. Gracias
+					a esta tecnología excepcional <b>ThermaHome</b> ofrece una emisividad
+					elevada y una sensación de calor cómoda y natural, por medio de
+					paneles radiantes que posibilitan una distribución vertical de
+					calor más equilibrada dentro de la habitación.
+				</p>
+        </div>
+        <div class="beneficiosPoints">
+          <ul>
+    				<li>
+    					<img src="img/icons/caracteristicas1.svg" alt="Icono característica" width="25">
+    					<p>No contamina el ambiente</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas2.svg" alt="Icono característica" width="25">
+    					<p>Es material duradero</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas3.svg" alt="Icono característica" width="25">
+    					<p>No produce residuos</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas4.svg" alt="Icono característica" width="25">
+    					<p>No se degrada</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas5.svg" alt="Icono característica" width="25">
+    					<p>Cero radiación</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas6.svg" alt="Icono característica" width="25">
+    					<p>Sin mantenimiento</p>
+    				</li>
+    				<li>
+    					<img src="img/icons/caracteristicas7.svg" alt="Icono característica" width="25">
+    					<p>Sin gastos extras</p>
+    				</li>
+			    </ul>
+        </div>
+    </div>
+    <div class="pleca"></div>
+      <!-- VIDEO -->
+    <div id="coverVideo">
+      <iframe src="https://player.vimeo.com/video/238791596?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="640" height="424" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen onload="vimeoIsPlaying()"></iframe>
+      <a role="button">
+        Ver Video
+      </a>
     </div>
     <div id="beneficios">
 		<div class="tituloB">
@@ -370,6 +375,7 @@ v3
       <li class="mobile">
         <a data-scroll href="#main">
           <img class="alignCenter" id="iconGoBack" src="img/icons/footer.svg" alt="" width="40" title="Subir">
+          <p style="color:#fff">Subir</p>
         </a>
       </li>
       <li class="alignLeft">
@@ -386,6 +392,7 @@ v3
       <li class="desktop">
         <a data-scroll href="#main">
           <img class="alignCenter" id="iconGoBack" src="img/icons/footer.svg" alt="" width="40" title="Subir">
+          <p style="color:#fff">Subir</p>
         </a>
       </li>
       <li class="alignRight">
@@ -403,10 +410,10 @@ v3
   <script src="js/imageMapResizer.min.js" charset="utf-8"></script>
   <script src="js/smooth-scroll.min.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- UI -->
+  <script src="js/main.min.js" charset="utf-8"></script>
   <script type="text/javascript">
-    function _(el){return document.querySelector(el); }
-    function __(el){return document.querySelectorAll(el); }
+
     var svgborder = __('.svgborder'),
         nuestratecnologia = _('#nosotros'),
         area = __('.area'),
@@ -424,7 +431,7 @@ v3
         function clearLoading(){
           clearInterval(countPercentage);
         }
-        setInterval(function(){ logoLoading(); },2600);
+        setInterval(function(){ logoLoading(); },600);
       }
 
       function logoLoading(){
@@ -440,12 +447,10 @@ v3
       }
       initLoading();
       logoLoading();
-      var checkMobile = false;
-      if(bowser.mobile || bowser.tablet || /SymbianOS/.test(window.navigator.userAgent)) checkMobile = true;
       videoSetHeight();
       imageMapResize();
       smoothScroll.init();
-      if(checkMobile){
+      if(checkBowser){
         setButtonPhone('mobile');
       } else{
         getCoords();
@@ -468,27 +473,39 @@ v3
         setAniSvg();
       }
     }
-  </script>
-  <script src="js/main.js" charset="utf-8"></script>
-  <script type="text/javascript">
-  var amountOp = 0,
-      iphoneMapInner = _('#iphoneMap>p'),
-      mapImgDos = _('#mapImgDos');
-	  $(function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 10,
-      max: 24,
-      values: [ 10, 10 ],
-      animate:true,
-      step:1,
-      slide: function( event, ui ) {
-        iphoneMapInner.innerHTML = ui.values[1];
-        var opImgCalor = (ui.values[1]/24)-0.5;
-        mapImgDos.style.opacity = opImgCalor;
-      }
+
+    function vimeoIsPlaying() {
+      var w = _('#loading');
+      setTimeout(function(){
+        w.style.opacity = "0";
+        setTimeout(function(){
+          w.style.display = "none";
+        },600);
+      },800);
+    }
+
+    vimeoIsPlaying();
+
+
+
+    var amountOp = 0,
+        iphoneMapInner = _('#iphoneMap>p'),
+        mapImgDos = _('#mapImgDos');
+      $(function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 10,
+        max: 24,
+        values: [ 10, 10 ],
+        animate:true,
+        step:1,
+        slide: function( event, ui ) {
+          iphoneMapInner.innerHTML = ui.values[1];
+          var opImgCalor = (ui.values[1]/24)-0.5;
+          mapImgDos.style.opacity = opImgCalor;
+        }
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>

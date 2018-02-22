@@ -157,7 +157,7 @@ v3
         <li><a href="casos.html">Más</a></li>
       </ul>
   </nav>
-  <div id="main" class="maincontacto" style="background:#3f2e3b;">
+  <div id="main" class="maincontacto" style="background:#3f2e3b; padding-bottom:30px;">
       <h1>
         Contacto
       </h1>
@@ -261,6 +261,7 @@ v3
       <li class="mobile">
         <a data-scroll href="#main">
           <img class="alignCenter" id="iconGoBack" src="img/icons/footer.svg" alt="" width="40" title="Subir">
+          <p style="color:#fff">Subir</p>
         </a>
       </li>
       <li class="alignLeft">
@@ -277,6 +278,7 @@ v3
       <li class="desktop">
         <a data-scroll href="#main">
           <img class="alignCenter" id="iconGoBack" src="img/icons/footer.svg" alt="" width="40" title="Subir">
+          <p style="color:#fff">Subir</p>
         </a>
       </li>
       <li class="alignRight">
@@ -305,14 +307,14 @@ v3
         function clearLoading(){
           clearInterval(countPercentage);
         }
-        setInterval(function(){ logoLoading(); },2600);
+        setInterval(function(){ logoLoading(); },800);
         var w = _('#loading');
         setTimeout(function(){
           w.style.opacity = "0";
           setTimeout(function(){
             w.style.display = "none";
           },600);
-        },2000);
+        },800);
       }
 
       function logoLoading(){
@@ -344,7 +346,7 @@ v3
     window.onscroll = function () {
     }
   </script>
-  <script src="js/main.js" charset="utf-8"></script>
+  <script src="js/main.min.js" charset="utf-8"></script>
   <script src="js/contacto.js" charset="utf-8"></script>
 </body>
 </html>
